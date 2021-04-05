@@ -1,0 +1,439 @@
+# p3 clothes
+3 = {
+	0 = { # Royal clothes 1
+		factor = 1
+		trigger = {
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 1 }
+				has_portrait_property = { layer = 3 index = 2 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 1 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+				government = order_government
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 1 }
+		}
+	}
+
+	1 = { # Royal clothes 2
+		factor = 1
+		trigger = {
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 0 }
+				has_portrait_property = { layer = 3 index = 2 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 2 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+				government = order_government
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 2 }
+		}
+	}
+
+	2 = { # Royal clothes 3
+		factor = 1
+		trigger = {
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 0 }
+				has_portrait_property = { layer = 3 index = 1 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 3 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+				government = order_government
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 3 }
+		}
+	}
+
+	3 = { # Noble clothes 1
+		factor = 1
+		trigger = {
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				is_or_was_offmap_power_ruler = yes
+				trait = peasant_leader
+				trait = heresiarch
+				government = order_government
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 4 } }
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 4 }
+				has_portrait_property = { layer = 3 index = 5 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 4 } }
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 4 }
+		}
+	}
+
+	4 = { # Noble clothes 2
+		factor = 1
+		trigger = {
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				is_or_was_offmap_power_ruler = yes
+				trait = peasant_leader
+				trait = heresiarch
+				government = order_government
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 5 } }
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 3 }
+				has_portrait_property = { layer = 3 index = 5 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 5 } }
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 5 }
+		}
+	}
+
+	5 = { # Noble clothes 3
+		factor = 1
+		trigger = {
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				is_or_was_offmap_power_ruler = yes
+				trait = peasant_leader
+				trait = heresiarch
+				government = order_government
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 6 } }
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 3 }
+				has_portrait_property = { layer = 3 index = 4 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 6 } }
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 6 }
+		}
+	}
+
+	6 = { # Modest clothes 1
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				is_landed = yes
+				spouse = { higher_real_tier_than = count }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				is_or_was_offmap_power_ruler = yes
+			}
+			NOR = {
+				trait = peasant_leader
+				trait = heresiarch
+				is_variable_equal = { which = ca_clothes value = 7 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 7 }
+				has_portrait_property = { layer = 3 index = 8 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 7 } }
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 7 }
+		}
+	}
+
+	7 = { # Modest clothes 2
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				is_landed = yes
+				spouse = { higher_real_tier_than = count }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				is_or_was_offmap_power_ruler = yes
+			}
+			NOR = {
+				trait = peasant_leader
+				trait = heresiarch
+				is_variable_equal = { which = ca_clothes value = 8 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 6 }
+				has_portrait_property = { layer = 3 index = 8 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 8 } }
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 8 }
+		}
+	}
+
+	8 = { # Modest clothes 3
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				is_landed = yes
+				spouse = { higher_real_tier_than = count }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				is_or_was_offmap_power_ruler = yes
+			}
+			NOR = {
+				trait = peasant_leader
+				trait = heresiarch
+				is_variable_equal = { which = ca_clothes value = 9 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = { #Prevent clothes switching on portrait refresh.
+				has_portrait_property = { layer = 3 index = 6 }
+				has_portrait_property = { layer = 3 index = 7 }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 9 } }
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 9 }
+		}
+	}
+
+	9 = { # Shady clothes
+		factor = 3
+		trigger = {
+			OR = {
+				has_job_title = job_spymaster
+				AND = {
+					intrigue = 10
+					lower_real_tier_than = duke
+				}
+				is_variable_equal = { which = ca_clothes value = 10 }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+			}
+			NOT = { is_variable_equal = { which = ca_clothes value = 10 } }
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_clothes value = 10 }
+		}
+	}
+
+	# Martial
+	10 = {
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					in_command = yes
+					has_game_rule = {
+						name = martial_headgear
+						value = on
+					}
+				}
+				#AND = {
+				#	has_minor_title = title_commander
+				#	is_ruler = no
+				#}
+				has_job_title  = job_marshal
+				trait = shieldmaiden
+				government = order_government
+				primary_title = {
+					OR = {
+						title = d_knights_hospitaler
+						title = d_knights_templar
+						title = d_teutonic_order
+						title = k_teutonic_state
+						title = d_livonian_order
+					}
+				}
+				is_variable_equal = { which = ca_clothes value = 11 }
+			}
+		}
+		modifier = {
+			factor = 0
+			chinese_martial_modifier_trigger = yes
+		}
+		modifier = {
+			factor = 0
+			chinese_martial_2_modifier_trigger = yes
+		}
+		modifier = {
+			factor = 0
+			chinese_generals_modifier_trigger = yes
+		}
+	}
+
+	# Ragged prison clothes
+	11 = {
+		factor = 100
+		trigger = {
+			OR = {
+				prisoner = yes
+				death_reason = death_dungeon
+				death_reason = death_slavery
+				is_variable_equal = { which = ca_clothes value = 12 }
+			}
+		}
+	}
+
+	# Chinese Martial Extension 1
+	12 = {
+		factor = 100
+		trigger = {
+			OR = {
+				chinese_generals_modifier_trigger = yes
+				is_variable_equal = { which = ca_clothes value = 13 }
+			}
+		}
+	}
+
+	# Chinese Martial Extension 2
+	13 = {
+		factor = 100
+		trigger = {
+			OR = {
+				chinese_martial_modifier_trigger = yes
+				is_variable_equal = { which = ca_clothes value = 14 }
+			}
+		}
+		modifier = {
+			factor = 100 # This ensures that the reverse order check stays matched
+			has_portrait_property = { layer = 5 index = 13 }
+		}
+	}
+
+	# Chinese Martial Extension 3
+	14 = {
+		factor = 100
+		trigger = {
+			OR = {
+				chinese_martial_2_modifier_trigger = yes
+				is_variable_equal = { which = ca_clothes value = 15 }
+			}
+		}
+		modifier = {
+			factor = 100 # This ensures that the reverse order check stays matched
+			has_portrait_property = { layer = 5 index = 14 }
+		}
+	}
+}

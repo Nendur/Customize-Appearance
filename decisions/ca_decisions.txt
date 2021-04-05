@@ -1,0 +1,47 @@
+targetted_decisions = {
+
+	customize_appearance = {
+		ai = no
+		filter = all_including_me
+		ai_target_filter = none
+
+		from_potential = {}
+		potential = {
+			is_adult = yes
+			NOR = {
+				graphical_culture = horsegfx
+				graphical_culture = catgfx
+				graphical_culture = hedgehoggfx
+				graphical_culture = duckgfx
+				graphical_culture = doggfx
+				graphical_culture = elephantgfx
+				graphical_culture = dragongfx
+				graphical_culture = redpandagfx
+				graphical_culture = beargfx
+			}
+		}
+		allow = {
+			is_adult = yes
+			OR = {	#Make multiplayer gamers well-behaved.
+				character = FROM
+				AND = {
+					ai = yes
+					host = {
+						OR = {
+							character = FROM
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			FROM = { character_event = { id = ca.100 } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

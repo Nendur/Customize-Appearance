@@ -1,0 +1,294 @@
+# p13 eyepatch for one_eyed
+13 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			trait = one_eyed
+			NOR = {
+				has_character_modifier = glass_eye
+				is_variable_equal = { which = ca_eyepatch value = 13 }
+			}
+		}
+	}
+
+	1 = { # eyepatch 1
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 1 }
+			}
+		}
+	}
+
+	2 = { # eyepatch 2 - red leather
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 2 }
+			}
+		}
+	}
+
+	3 = { # eyepatch 3 - painted eye
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NAND = {
+					trait = one_eyed
+					OR = {
+						trait = paranoid
+						trait = possessed
+						is_variable_equal = { which = ca_eyepatch value = 3 }
+					}
+				}
+				has_character_modifier = glass_eye
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				trait = paranoid
+				trait = possessed
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 3 }
+			}
+		}
+	}
+
+	4 = { # eyepatch 4 - red
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 4 }
+			}
+		}
+	}
+
+	5 = { # eyepatch 5 - white rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+		modifier = {
+			factor = 3
+			religion = catholic
+			is_theocracy = yes
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 5 }
+			}
+		}
+	}
+
+	6 = { # eyepatch 6 - blue rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				religion = tengri_pagan
+				religion = tengri_pagan_reformed
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 6 }
+			}
+		}
+	}
+
+	7 = { # eyepatch 7 - green rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+		modifier = {
+			factor = 2
+			religion_group = muslim
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 7 }
+			}
+		}
+	}
+
+	8 = { # eyepatch 8 - red rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 8 }
+			}
+		}
+	}
+
+	9 = { # eyepatch 9 - bloodied rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NAND = {
+					trait = one_eyed
+					OR = {
+						trait = wroth
+						trait = cruel
+						has_minor_title = title_commander
+						is_variable_equal = { which = ca_eyepatch value = 9 }
+					}
+				}
+				has_character_modifier = glass_eye
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				trait = wroth
+				trait = cruel
+				has_minor_title = title_commander
+			}
+		}
+		modifier = {
+			factor = 2
+			martial = 12
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 9 }
+			}
+		}
+	}
+
+	10 = { # eyepatch 10 - tartan rag
+		factor = 3
+		modifier = {
+			factor = 0
+			OR = {
+				NAND = {
+					trait = one_eyed
+					OR = {
+						culture_group = celtic
+						is_variable_equal = { which = ca_eyepatch value = 10 }
+					}
+				}
+				has_character_modifier = glass_eye
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 10 }
+			}
+		}
+	}
+
+	11 = { # eyepatch 11 - scarred eye 1
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = one_eyed }
+		}
+		modifier = {
+			factor = 0
+			trait = shy
+			NOT = { is_variable_equal = { which = ca_eyepatch value = 11 } }
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				is_tribal = yes
+				is_nomadic = yes
+				trait = stubborn
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 11 }
+			}
+		}
+	}
+
+	12 = { # eyepatch 12 - scarred eye 2
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = one_eyed }
+		}
+		modifier = {
+			factor = 0
+			trait = shy
+			NOT = { is_variable_equal = { which = ca_eyepatch value = 12 } }
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				is_tribal = yes
+				is_nomadic = yes
+				trait = stubborn
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 12 }
+			}
+		}
+	}
+}

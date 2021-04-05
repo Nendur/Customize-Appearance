@@ -1,0 +1,458 @@
+#p32 frankish Culture Overlayer - Female
+32 = {
+	0 = { # Blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				is_female = no
+				is_priest = yes
+				#is_merchant_republic = yes
+				french_overlayer_special_crown_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 1 }
+			}
+		}
+		modifier = {
+			factor = 100
+			NOR = {
+				culture = frankish
+				culture = occitan
+				check_variable = { which = ca_overlayer value = 2 }
+			}
+		}
+	}
+
+	1 = { # Military Helm 01
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 2 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 2 }
+		}
+	}
+
+	2 = { # Military Helm 02
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 3 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 3 }
+		}
+	}
+
+	3 = { # Military Helm 03
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 4 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 4 }
+		}
+	}
+
+	4 = { # Military Helm 04
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 5 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 5 }
+		}
+	}
+
+	5 = { # Duchess Accessories - Early
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 6 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 6 }
+		}
+	}
+
+	6 = { # Duchess Accessories - Early
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 7 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 7 }
+		}
+	}
+
+	7 = { # Duchess Accessories - Early
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 8 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 8 }
+		}
+	}
+
+	8 = { # Duchess Accessories - Post-1180
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 9 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 9 }
+		}
+	}
+
+	9 = { # Duchess Accessories - Post-1180
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 10 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 10 }
+		}
+	}
+
+	10 = { # Countess Accessories - Early
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 11 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 11 }
+		}
+	}
+
+	11 = { # Countess Accessories - Early
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 12 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 12 }
+		}
+	}
+
+	12 = { # Countess Accessories - Post-1180
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 13 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 13 }
+		}
+	}
+
+	13 = { # Countess Accessories - Post-1180
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 14 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 14 }
+		}
+	}
+
+	14 = { # Countess Accessories - Post-1180
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 15 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 15 }
+		}
+	}
+
+	15 = { # Countess Accessories - Post-1180
+		factor = 5
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 16 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 16 }
+		}
+	}
+
+	16 = { # Non-noble Pre-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 17 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 17 }
+		}
+	}
+
+	17 = { # Non-noble Pre-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 18 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 18 }
+		}
+	}
+
+	18 = { # Non-noble Pre-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 19 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 19 }
+		}
+	}
+
+	19 = { # Non-noble Pre-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 20 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 20 }
+		}
+	}
+
+	20 = { # Non-noble Post-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 21 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 21 }
+		}
+	}
+
+	21 = { # Non-noble Post-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 22 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 22 }
+		}
+	}
+
+	22 = { # Non-noble Post-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 23 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 23 }
+		}
+	}
+
+	23 = { # Non-noble Post-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 24 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 24 }
+		}
+	}
+
+	24 = { # Non-noble Post-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					french_courtier_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_overlayer value = 25 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 25 }
+		}
+	}
+}

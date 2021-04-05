@@ -1,0 +1,252 @@
+#p31 frankish Culture Overlayer - Male
+31 = {
+	0 = { # Blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				is_priest = yes
+				#is_merchant_republic = yes
+				french_overlayer_special_crown_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 1 }
+			}
+		}
+	}
+
+	1 = { # Military Helm 01
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 2 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 2 }
+		}
+	}
+
+	2 = { # Military Helm 02
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 3 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 3 }
+		}
+	}
+
+	3 = { # Military Helm 03
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 4 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 4 }
+		}
+	}
+
+	4 = { # Military Helm 04
+		factor = 99
+		trigger = {
+			OR = {
+				french_martial_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 5 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 5 }
+		}
+	}
+
+	5 = { # Count Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_count_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 6 }
+			}
+			NOR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 6 }
+		}
+	}
+
+	6 = { # Count Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_count_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 7 }
+			}
+			NOR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 7 }
+		}
+	}
+
+	7 = { # Count Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_count_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 8 }
+			}
+			NOR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 8 }
+		}
+	}
+
+	8 = { # Count Accessories
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				french_count_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 9 }
+			}
+			NOR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 9 }
+		}
+	}
+
+	9 = { # Count Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_count_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 10 }
+			}
+			NOR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 10 }
+		}
+	}
+
+	10 = { # Duke Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_duke_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 11 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 11 }
+		}
+	}
+
+	11 = { # Duke Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_duke_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 12 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 12 }
+		}
+	}
+
+	12 = { # Duke Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_duke_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 13 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 13 }
+		}
+	}
+
+	13 = { # Duke Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_duke_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 14 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 14 }
+		}
+	}
+
+	14 = { # Duke Accessories
+		factor = 5
+		trigger = {
+			OR = {
+				french_duke_overlayer_trigger = yes
+				is_variable_equal = { which = ca_overlayer value = 15 }
+			}
+			OR = {
+				higher_real_tier_than = COUNT
+				spouse = { higher_real_tier_than = COUNT }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 15 }
+		}
+	}
+}

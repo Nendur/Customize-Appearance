@@ -1,0 +1,240 @@
+# p4 beard
+4 = {
+	0 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			religion_group = muslim
+		}
+		modifier = {
+			factor = 30
+			OR = {
+				culture = greek
+				culture = italian
+				culture = roman
+			}
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+				religion = hellenic_pagan_reformed
+			}
+		}
+		modifier = {
+			factor = 15
+			religion_group = christian
+			culture_group = iberian
+			OR = {
+				graphical_culture = southerngfx
+				graphical_culture = byzantinegfx
+			}
+		}
+		modifier = {
+			factor = 100
+			is_priest = yes
+			likes_buddhists = yes
+		}
+		modifier = {
+			factor = 100 #No longer bearded Ottavian.
+			character = 145290
+		}
+		modifier = { # frankish men less likely to wear beards after the 12th century
+			factor = 2
+			year_of_birth = 1100
+			OR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+				is_parent_religion = catholic
+			}
+		}
+		modifier = { # frankish men less likely to wear beards after the 12th century
+			factor = 2
+			year_of_birth = 1150
+			culture = frankish
+		}
+		modifier = { # frankish men less likely to wear beards after the 12th century
+			factor = 2
+			year_of_birth = 1200
+			culture = frankish
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 1 }
+			}
+		}
+	}
+
+	1 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 2 }
+			}
+		}
+	}
+
+	2 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 3 }
+			}
+		}
+	}
+
+	3 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 4 }
+			}
+		}
+	}
+
+	4 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 5 }
+			}
+		}
+	}
+
+	5 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 6 }
+			}
+		}
+	}
+
+	6 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 7 }
+			}
+		}
+	}
+
+	7 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 8 }
+			}
+		}
+	}
+
+	8 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 9 }
+			}
+		}
+	}
+
+	9 = {
+		factor = 1
+		modifier = {
+			factor = 5
+			religion_group = christian
+			culture_group = iberian
+			OR = {
+				graphical_culture = southerngfx
+				graphical_culture = byzantinegfx
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 10 }
+			}
+		}
+	}
+
+	10 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			religion_group = muslim
+		}
+		modifier = {
+			factor = 20
+			religion_group = christian
+			culture_group = iberian
+			OR = {
+				graphical_culture = southerngfx
+				graphical_culture = byzantinegfx
+			}
+		}
+		modifier = {
+			factor = 60
+			religion_group = christian
+			OR = {
+				culture = greek
+				culture = italian
+			}
+			OR = {
+				graphical_culture = southerngfx
+				graphical_culture = byzantinegfx
+			}
+		}
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 11 }
+			}
+		}
+	}
+
+	11 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 12 }
+			}
+		}
+	}
+
+	12 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 13 }
+			}
+		}
+	}
+
+	13 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 14 }
+			}
+		}
+	}
+
+	14 = {
+		factor = 1
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 15 }
+			}
+		}
+	}
+}

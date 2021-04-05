@@ -1,0 +1,384 @@
+#p33 frankish Culture Underlayer and Hair - Female
+33 = {
+	0 = { # Blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				is_female = no
+				is_priest = yes
+				#is_merchant_republic = yes
+				french_overlayer_special_crown_trigger = yes
+				is_variable_equal = { which = ca_underlayer value = 1 }
+			}
+		}
+		modifier = {
+			factor = 100
+			NOR = {
+				culture = frankish
+				culture = occitan
+				check_variable = { which = ca_underlayer value = 2 }
+			}
+		}
+	}
+
+	1 = { # Empress / Queen Pre-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 2 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 2 }
+		}
+	}
+
+	2 = { # Empress / Queen Pre-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 3 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 3 }
+		}
+	}
+
+	3 = { # Empress / Queen Pre-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 4 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 4 }
+		}
+	}
+
+	4 = { # Empress / Queen Pre-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 5 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 5 }
+		}
+	}
+
+	5 = { # Empress / Queen Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 6 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 6 }
+		}
+	}
+
+	6 = { # Empress / Queen Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 7 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 7 }
+		}
+	}
+
+	7 = { # Empress / Queen Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 8 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 8 }
+		}
+	}
+
+	8 = { # Empress / Queen Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_queen_underlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 9 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 9 }
+		}
+	}
+
+	9 = { # Duchess Early
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 10 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 10 }
+		}
+	}
+
+	10 = { # Duchess Early
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 11 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 11 }
+		}
+	}
+
+	11 = {  # Duchess Early
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 12 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 12 }
+		}
+	}
+
+	12 = { # Duchess Early
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 13 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 13 }
+		}
+	}
+
+	13 = { # Duchess Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					french_duchess_overlayer_trigger = yes
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 14 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 14 }
+		}
+	}
+
+	14 = { # Duchess Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 15 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 15 }
+		}
+	}
+
+	15 = { # Countess Early
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 16 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 16 }
+		}
+	}
+
+	16 = { # Countess Early
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 17 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 17 }
+		}
+	}
+
+	17 = { # Countess Early
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth < 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 18 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 18 }
+		}
+	}
+
+	18 = { # Countess Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 19 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 19 }
+		}
+	}
+
+	19 = { # Countess Post-1180
+		factor = 1
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = COUNT
+						spouse = { real_tier = COUNT }
+					}
+					year_of_birth >= 1160
+				}
+				is_variable_equal = { which = ca_underlayer value = 20 }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 20 }
+		}
+	}
+}
